@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Book</title>
+
+    <!-- remix icon cdn -->
+    <link
+      href="sytle.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- =========== header start ============ -->
+    <header class="header">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__wrapper">
+            <div class="logo">
+              <h1>Villa<span class="highlight">Cafeteria</span></h1>
+            </div>
+
+            <div class="navigation">
+              <ul class="nav__menu">
+                <li class="nav__item">
+                  <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#menu" class="nav__link">Recipe Book</a>
+                </li>
+              </ul>
+            </div>
+
+            <span class="mobile__menu"><i class="ri-menu-line"></i></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =========== header end ============ -->
+
+    <!-- =========== main start ============ -->
+    <main>
+      <!-- hero section start -->
+      <section id="home" class="section">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__content">
+              <h2 class="hero__title">Prepare your favourite dish</h2>
+              <h2 class="highlight">with Villa Cafeteria</h2>
+              <p>
+                Learn how to prepare your favourite dish with Villa Cafeteria.
+                This Recipe book will guide you on how to prepare the meal of your choice.
+              </p>
+
+              <div class="hero__btns">
+                <button class="view__more-btn">View menu</button>
+                <span class="play__btn"><i class="ri-play-fill"></i></span>
+              </div>
+            </div>
+
+            <div class="hero__img">
+              <img src="./images/product-01.png" alt="hero-img" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+            <div class="about__content">
+              <h3>
+                We pride ourselves on guiding you on how to prepare the best meal.
+              </h3>
+
+              <button class="learn__more"><a href="#">Learn more</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about us section end -->
+      <!-- menu section start -->
+      <section class="section" id="menu">
+        <div class="container">
+          <!-- Add recipes form -->
+            <div class="left-column">
+             <h3>Add Recipe</h3>
+             <form>
+               <label for="recipe-name">Name:</label>
+               <input type="text" id="recipe-name" required>
+               <br>
+               <label for="recipe-ingredients">Ingredients:</label>
+               <textarea id="recipe-ingredients" rows="5" required></textarea>
+               <br>
+               <label for="recipe-method">Method:</label>
+               <textarea id="recipe-method" rows="5" required></textarea>
+               <br>
+               <button type="submit">Add Recipe</button>
+             </form>
+           </div>
+         <!-- Search bar/view recipes list -->
+         <div class="right-column">
+         <div id="search-section">
+               <h3>Recipes List</h3>
+               <label for="search-box">Search:</label>
+               <input type="text" id="search-box">
+             </div>
+             <div id="recipe-list"></div>
+         <div id="no-recipes">You have no recipes.</div>
+           </div>
+         </div>
+           <!-- Search bar/view recipes list -->
+           <div class="right-column">
+           <div id="search-section">
+                 <h3>Recipes List</h3>
+                 <label for="search-box">Search:</label>
+                 <input type="text" id="search-box">
+               </div>
+               <div id="recipe-list"></div>
+           <div id="no-recipes">You have no recipes.</div>
+             </div>
+           </div>
+      <!-- offer section start -->
+      <section class="section">
+        <div class="container">
+          <div class="offer__wrapper">
+            <div class="offer__content">
+              <h2>
+                Prepare <span class="highlight">tortellini</span> with Villa Cafeteria
+              </h2>
+              <p>
+                Tortellini is a delicious pasta dish that's typically filled with cheese, meat, or a combination of both
+              </p>
+
+              <button class="view__more-btn">Learn now</button>
+            </div>
+
+            <div class="offer__img">
+              <img src="./images/offer.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- blog section start -->
+      <section class="section" id="blog">
+        <div class="container">
+          <div class="blog__top">
+            <h2>Our Top Recipes</h2>
+          </div>
+
+          <div class="blog__wrapper">
+            <div class="blog__item">
+              <div class="blog__img">
+                <img src="./images/recipe-01.jpg" alt="" />
+              </div>
+              <div class="blog__content">
+                <h3>Chicken Wings</h3>
+                <p>
+                  Chicken wings are a popular and delicious dish that can be prepared in various ways
+                </p>
+
+                <a href="#" class="read__more">Learn now</a>
+              </div>
+            </div>
+
+            <div class="blog__item">
+              <div class="blog__img">
+                <img src="./images/recipe-02.jpg" alt="" />
+              </div>
+              <div class="blog__content">
+                <h3>Roasted Chicken</h3>
+                <p>
+                  Roasted chicken is a classic and flavorful dish that's perfect for a Sunday dinner or any special occasion
+                </p>
+
+                <a href="#" class="read__more">Learn now</a>
+              </div>
+            </div>
+
+            <div class="blog__item">
+              <div class="blog__img">
+                <img src="./images/recipe-03.jpg" alt="" />
+              </div>
+              <div class="blog__content">
+                <h3>Biriyani</h3>
+                <p>
+                  Biryani is a flavorful and aromatic Indian rice dish made with fragrant spices, meat, or vegetables
+                </p>
+
+                <a href="#" class="read__more">Learn now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- blog section end -->
+    </main>
+    <!-- =========== main end ============ -->
+
+    <!-- =========== footer start ============ -->
+    <footer class="section footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <div class="logo">
+              <h1>Recipe<span class="highlight">Catalog</span></h1>
+            </div>
+            <p>Subscribe for weekly recipe updates</p>
+            <div class="subscribe__box">
+              <input type="email" placeholder="Your email" />
+              <button class="subscribe__btn">Subscribe</button>
+            </div>
+          </div>
+
+          <div class="footer__box">
+            <h3 class="footer__link-title">Information</h3>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a href="#about" class="footer__link">About Us</a>
+              </li>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__link">Career</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__link">Our Authors</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__box">
+            <h3 class="footer__link-title">Quick Links</h3>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a href="#menu" class="footer__link">Menu</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#blog" class="footer__link">Blog</a>
+              </li>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__link">Offer</a>
+              </li>
+            </ul>
+          </div>
+
+         
+
+        <p class="footer__copyright">
+          Developed by Mpundu Blessed Bwalya. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- =========== footer end ============ -->
+
+    <!-- main js file -->
+    <script src="app.js"></script>
+  </body>
+</html>
